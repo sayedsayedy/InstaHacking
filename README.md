@@ -61,7 +61,7 @@ Password List: passwords.txt
   ```
 ### License
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+This project is licensed under the MIT License - see the [LICENSE](https://github.com/ssayedy/InstagramSecurityTestingTool/blob/main/LICENSE.rst) file for details.
 
 ### Author
 
