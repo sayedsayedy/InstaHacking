@@ -50,7 +50,7 @@ A powerful tool designed by Sayed Sayedy for ethical hacking and security testin
 - Accounts requiring two-factor authentication are saved in `two_factor.txt`.
 - Accounts requiring additional verification are saved in `checkpoint.txt`.
 
-## Example
+### Example
 
 Here is an example of how to run the tool:
 
@@ -58,14 +58,11 @@ Here is an example of how to run the tool:
 $ python InstagramSecurityTestingTool.py
 Username: example_user
 Password List: passwords.txt
-
-## License
+  ```
+### License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-## Author
+### Author
 
 Sayed Sayedy - Ethical Hacker & Digital Forensics Investigator
-"# InstagramSecurityTestingTool" 
-"# InstagramSecurityTestingTool" 
-"# InstagramSecurityTestingTool" 
