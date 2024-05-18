@@ -1,6 +1,3 @@
-
-### `LICENSE.rst`
-```rst
 MIT License
 
 Copyright (c) 2024 Sayed Sayedy
