@@ -24,8 +24,8 @@ A powerful tool designed by Sayed Sayedy for ethical hacking and security testin
 
 1. Clone the repository:
     ```bash
-    git clone https://github.com/sayedsayedy/instagram-security-testing-tool.git
-    cd instagram-security-testing-tool
+    git clone https://github.com/ssayedy/InstagramSecurityTestingTool
+    cd InstagramSecurityTestingTool
     ```
 
 2. Install the required dependencies:
