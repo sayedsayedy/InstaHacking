@@ -10,9 +10,8 @@ import os
 import re
 from datetime import datetime
 from six.moves import input
-from utils.generate_passwords import generate_passwords
+from utils.password_generator import generate_passwords
 from utils.user_check import user_exists
-from utils.password_generator import generate_strong_password
 
 CheckVersion = str(sys.version)
 
