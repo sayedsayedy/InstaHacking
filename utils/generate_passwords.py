@@ -12,7 +12,21 @@ def generate_passwords(file_path, count=100):
         for _ in range(count):
             f.write(generate_strong_password() + '\n')
 
-base_words = ["Muenchen", "Munich"]
+def get_user_words():
+    print("Please enter two or three words for password generation.")
+    words = []
+    for i in range(3):
+        word = input(f"Enter word {i+1} (or press Enter to skip): ").strip()
+        if word:
+            words.append(word)
+        if len(words) == 2:
+            break
+    if len(words) < 2:
+        print("You must enter at least two words. Exiting...")
+        sys.exit()
+    return words
+
+base_words = get_user_words()
 years = ["2024"]
 special_chars = [".", "!", "@", "#", "$", "%", "^", "&", "*", "(", ")", "_", "+"]
 substitutions = {"a": "4", "e": "3", "i": "1", "o": "0"}
@@ -60,7 +74,7 @@ for base_word in base_words:
                 passwords.add(f"{variation}.{year}{special_char}!")
                 passwords.add(f"{variation}{special_char}.{year}!")
                 passwords.add(f"{variation}{special_char}{year}!")
-                
+
 # Write to passwords.txt
 with open("passwords.txt", "w") as f:
     for password in passwords:

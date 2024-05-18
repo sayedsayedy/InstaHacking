@@ -1,11 +1,3 @@
-
-### 4. `generate_passwords.py`
-Ensure this file contains the necessary function to generate passwords. Assume it's correctly implemented.
-
-### 5. `InstagramSecurityTestingTool.py`
-This is the main script file. Here is the extended and enhanced version:
-
-```python
 # author: Sayed Sayedy
 # Ethical Hacker & Digital Forensics Investigator
 from __future__ import absolute_import
