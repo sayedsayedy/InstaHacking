@@ -2,16 +2,16 @@
 
 ## Author
 Sayed Sayedy
-Ethical Hacker & Digital Forensics Investigator
 
 ## Description
-A powerful tool for ethical hacking and security testing on Instagram. It identifies weak passwords and security vulnerabilities in Instagram accounts. It is meant for educational purposes and should only be used with proper authorization.
+This tool is designed for ethical hackers to identify security vulnerabilities and weak passwords in Instagram accounts. Ensure you have proper authorization before using this tool.
 
 ## Features
-- Password brute-force attack
-- Password generator based on personal information
-- Multi-threading for faster execution
-- Session handling to avoid blocking and tracking
+- Brute-force attack using custom and generated password lists.
+- Generates passwords based on user-provided personal information.
+- Multi-threaded to enhance the speed of the attack.
+- Does not generate `.pyc` files.
+- No log files are created; all activities are output to the console.
 
 ## Installation
 1. Clone the repository:

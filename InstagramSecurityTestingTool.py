@@ -1,6 +1,5 @@
 # InstagramSecurityTestingTool.py
 # Author: Sayed Sayedy
-# Ethical Hacker & Digital Forensics Investigator
 
 from __future__ import absolute_import, print_function
 import itertools
@@ -17,12 +16,16 @@ from utils.user_check import user_exists
 from queue import Queue
 import logging
 import random
+from fake_useragent import UserAgent
+
+# Disable .pyc file generation
+sys.dont_write_bytecode = True
 
 # Setup logging
-logging.basicConfig(filename='attack_log.txt', level=logging.DEBUG,
-                    format='%(asctime)s %(levelname)s %(message)s')
+logging.basicConfig(filename='/dev/null', level=logging.DEBUG, format='%(asctime)s %(levelname)s %(message)s')
 
 CheckVersion = str(sys.version)
+ua = UserAgent()
 
 print('''
 \033[32m    
@@ -56,12 +59,12 @@ class PasswordAttack(object):
                 print(f'Username {user} does not exist. Please try again.')
 
     def get_password_list(self):
-        use_generated = input('Use generated passwords? (yes/no): ').lower() == 'yes'
-        Combo = 'passwords.txt' if use_generated else input('Password List: ')
+        use_generated = input('Generate new passwords? (yes/no): ').lower() == 'yes'
+        Combo = 'passwords.txt' if not use_generated else input('Password List: ')
         if use_generated:
             personal_info = get_personal_info()
-            generate_passwords(Combo, personal_info)
-        return Combo
+            generate_passwords('passwords.txt', personal_info)
+        return 'passwords.txt'
 
     def populate_queue(self):
         with open(self.Combo, 'r') as x:
