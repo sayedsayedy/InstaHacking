@@ -1,5 +1,5 @@
 # utils/user_check.py
-# User Check for InstagramSecurityTestingTool.py
+# User Check for InstaHacking.py
 # Author: Sayed Sayedy
 
 import requests

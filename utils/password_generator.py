@@ -1,5 +1,5 @@
 # utils/password_generator.py
-# Password Generator for InstagramSecurityTestingTool.py
+# Password Generator for InstaHacking.py
 # Author: Sayed Sayedy
 
 import itertools

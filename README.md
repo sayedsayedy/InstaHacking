@@ -1,7 +1,6 @@
-# Instagram Security Testing Tool
+# Instagram Password Cracker
 
-## Author
-Sayed Sayedy
+## Super Ethical Hacking Tool for Pentesting by Sayed Sayedy
 
 ## Description
 This tool is designed for ethical hackers to identify security vulnerabilities and weak passwords in Instagram accounts. Ensure you have proper authorization before using this tool.
@@ -10,14 +9,14 @@ This tool is designed for ethical hackers to identify security vulnerabilities a
 - Brute-force attack using custom and generated password lists.
 - Generates passwords based on user-provided personal information.
 - Multi-threaded to enhance the speed of the attack.
-- Does not generate `.pyc` files.
-- No log files are created; all activities are output to the console.
+- Session saving for resuming an interrupted attack.
+- Utilizes Tor for anonymous and secure connections.
 
 ## Installation
 1. Clone the repository:
     ```bash
-    git clone https://github.com/ssayedy/InstagramSecurityTestingTool
-    cd InstagramSecurityTestingTool
+    git clone https://github.com/sayedsayedy/InstaHacking
+    cd InstaHacking
     ```
 
 2. Install the required packages:
@@ -26,14 +25,23 @@ This tool is designed for ethical hackers to identify security vulnerabilities a
     ```
 
 ## Usage
-1. Run the tool:
+1. Start the Tor service:
     ```bash
-    python InstagramSecurityTestingTool.py
+    sudo service tor start
+    ```
+
+2. Run the script:
+    ```bash
+    python InstaHacking.py
     ```
 
 2. Follow the prompts to enter the username and choose the password generation method.
 
 ## Requirements
+Ensure you have the following installed on your system:
+
+```bash
+sudo apt-get install tor
 - Python 3.x
 - `requests` library
 - `six` library
@@ -42,4 +50,4 @@ This tool is designed for ethical hackers to identify security vulnerabilities a
 This project is licensed under the MIT License - see the [LICENSE.rst](LICENSE.rst) file for details.
 
 ## Disclaimer
-This tool is intended for ethical use only. Ensure you have proper authorization before using it on any Instagram account.
+This script is provided for educational and ethical purposes only. Misuse of this script for unauthorized access to Instagram accounts is illegal and unethical. By using this script, you agree that Sayed Sayedy is not responsible for any illegal or unauthorized use. Use this tool responsibly and only on accounts for which you have explicit permission.

