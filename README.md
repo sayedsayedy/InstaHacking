@@ -35,19 +35,21 @@ This tool is designed for ethical hackers to identify security vulnerabilities a
     python InstaHacking.py
     ```
 
-2. Follow the prompts to enter the username and choose the password generation method.
+3. Follow the prompts to enter the username and choose the password generation method.
 
 ## Requirements
 Ensure you have the following installed on your system:
 
-```bash
-sudo apt-get install tor
+- Tor:
+    ```bash
+    sudo apt-get install tor
+    ```
 - Python 3.x
 - `requests` library
 - `six` library
 
 ## License
-This project is licensed under the MIT License - see the [LICENSE.rst](LICENSE.rst) file for details.
+This project is licensed under the GPL-3.0 License - see the [LICENSE](LICENSE) file for details.
 
 ## Disclaimer
 This script is provided for educational and ethical purposes only. Misuse of this script for unauthorized access to Instagram accounts is illegal and unethical. By using this script, you agree that Sayed Sayedy is not responsible for any illegal or unauthorized use. Use this tool responsibly and only on accounts for which you have explicit permission.
