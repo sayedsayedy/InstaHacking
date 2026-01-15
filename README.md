@@ -1,7 +1,5 @@
 # Instagram Password Cracker
 
-## Super Ethical Hacking Tool for Pentesting by Sayed Sayedy
-
 ## Description
 This tool is designed for ethical hackers to identify security vulnerabilities and weak passwords in Instagram accounts. Ensure you have proper authorization before using this tool.
 
